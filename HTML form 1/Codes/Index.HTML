@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<style>
+    body {
+            background-image: url('https://img.freepik.com/free-vector/realistic-hologram-background_52683-88890.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .row1 {
+
+            width:100%;
+            padding: 10px;
+            height: 100%;
+            border-radius:10px;
+        }
+        .row2 {
+            width: 100%;
+            padding: 10px;
+            height: 100%;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: black;
+        }
+</style>
+    </head>
+    <body>
+        <h2 align="center">Student Information Form</h2>
+        <center>
+            <!--Row 1-->
+            <div class="row" style="background-color: rgba(255, 255, 255, 0.5)";>
+                <fieldset>
+            <legend>Personal Information</legend>
+            <form action="" method="post">
+                <input type="text" placeholder="Surname">&nbsp;
+                <input type="text" placeholder="Middle name">&nbsp;
+                <input type="text" placeholder="First name">&nbsp;
+                <br>
+                <label>Country:</label>
+                <select name="Country">
+                    <option value="PH">Philippines</option>
+                    <option value="CN">China</option>
+                    <option value="KR">Korea</option>
+                    <option value="INDIA">India</option>
+                    <option value="OTHER">Other</option>
+                </select>
+                <br>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="Female"> <label>Female</label>
+                <input type="radio" name="gender" value="Male"> <label>Male</label>
+                <input type="radio" name="gender" value="Rather not say"><label>Rather not say</label>
+                <br>
+                <label>Date of Birth </label><input type="date" name="date" value="birth">
+                <br>
+                <label>Age </label><input type="text">&nbsp;
+                <br>
+                <label>Email </label><input type="text">&nbsp;
+                </fieldset>
+                </div>
+            </form>
+            <!--Row 2-->
+            <div class="row2" style="background-color: rgba(255, 255, 255, 0.5)";>
+                <fieldset>
+                    <legend>Skills</legend>
+                    <form action="" method="post">
+                        <br>
+                        <input type="checkbox" name="skills" value="PHP">PHP
+                        <input type="checkbox" name="skills" value="Java">Java
+                        <input type="checkbox" name="skills" value="C++">C++
+                        <input type="checkbox" name="skills" value="C">C
+                        <input type="checkbox" name="skills" value="C#">C#
+                        <input type="checkbox" name="skills" value="HTML5">HTML5
+                        <input type="checkbox" name="skills" value="CSS3">CSS3
+                        <input type="checkbox" name="skills" value="JavaScript">JavaScript
+                        <br>
+                        <label for="Comments">Comments:</label>
+                        <br>
+                        <textarea rows="5" cols="50"></textarea>
+                        <br>
+                        <a href="calendar.html"><input type="button" value="View School Calendar"></a>
+                    </form>
+                    <form action="submit.html">
+                        <input type="reset"><input type="submit">
+                    </form>
+                </fieldset>
+            </div>
+        </center>
+    </body>
+    </html>
